@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_thread"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haoyue.demo_list.thread.ThreadActivity">
+
+    <TextView
+        android:id="@+id/tvTextThread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:text="UI更新"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btChildThreadEventBus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="子线程new Thread + EventBus更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btChildThread_RunOnUiThread_Inter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="子线程 → runOnUiThread →Interface接口更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btRunOnUiThread_Inter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="runOnUiThread线程 → Interface接口更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btRunOnUiThread_EventBus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="runOnUiThread + EventBus更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btUpdateUI_Handller"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="通过Handller测试接口回调更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btUpdateUI_EventBus"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="通过EventBus测试子线程回调接口更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btRunOnUiThread"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="通过RunOnUiThread测试更新UI"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btInterface"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/button_background"
+            android:text="通过Interface接口测试更新UI"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</RelativeLayout>

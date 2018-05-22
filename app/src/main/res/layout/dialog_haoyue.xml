@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@mipmap/loadview">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/custom_dialog"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDialogTitle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:fontFamily="微软雅黑"
+            android:gravity="center"
+            android:text="温馨提示"
+            android:textColor="@color/light_blue_sky"
+            android:textSize="@dimen/five_font"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/fenge"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvDialogMessage"
+                android:layout_width="match_parent"
+                android:layout_height="69.5dp"
+                android:gravity="center"
+                android:singleLine="false"
+                android:text="亲，你今天的快乐购物额度用完啦，明天请早；给您带来的不便，敬请谅解"
+                android:textSize="@dimen/three_font"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/fenge"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDialogLeftButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="左"
+                android:textColor="@color/light_blue_sky"
+                android:textSize="@dimen/three_font"/>
+
+            <View
+                android:id="@+id/vLeft"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/fenge"/>
+
+            <TextView
+                android:id="@+id/tvDialogMiddleButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="中"
+                android:textColor="@color/light_blue_sky"
+                android:textSize="@dimen/three_font"/>
+
+            <View
+                android:id="@+id/vRight"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/fenge"/>
+
+            <TextView
+                android:id="@+id/tvDialogRightButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="右"
+                android:textColor="@color/light_blue_sky"
+                android:textSize="@dimen/three_font"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

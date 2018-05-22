@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.haoyue.demo_list">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:name=".base.App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".canvas.CanvasActivity">
+        </activity>
+        <activity android:name=".checkview.CheckViewActivity">
+        </activity>
+        <activity android:name=".thread.ThreadActivity">
+        </activity>
+
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.haoyue.demo_list.service"/>
+
+                <category android:name="android.intent.category.default"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.MyIntentService"
+            android:enabled="true"
+            android:exported="true"/>
+        <service
+            android:name=".download.DownLoadService"
+            android:enabled="true"
+            android:exported="true"/>
+
+        <activity android:name=".CanvasTest.CanvasLineActivity">
+        </activity>
+        <activity android:name=".beziers.BezierActivity">
+        </activity>
+        <activity android:name=".pathmeasure.PathMeasureActivity">
+        </activity>
+        <activity android:name=".matrix.MatrixActivity">
+        </activity>
+        <activity android:name=".service.TestServiceActivity">
+        </activity>
+        <activity android:name=".download.DownLoadServiceActivity">
+        </activity>
+        <activity android:name=".receiver.ReceiverActivity">
+        </activity>
+
+        <receiver
+            android:name=".receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="10">
+                <action android:name="wujinjianzhuangbiwang"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.OrderReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="wujinjianzhuangbiwang"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.LocalReceiver"
+            android:enabled="true"
+            android:exported="true">
+        </receiver>
+
+        <activity android:name=".matrix_animation.MatrixCameraActivity">
+        </activity>
+        <activity android:name=".motionevent.MotionEventActivity">
+        </activity>
+        <activity android:name=".gesture.GestureDetectorActivity">
+        </activity>
+        <activity android:name=".date.DateActivity">
+        </activity>
+        <activity android:name=".beziers.BezierThreeActivity">
+        </activity>
+        <activity android:name=".beziers.BezierHeartActivity">
+        </activity>
+        <activity android:name=".finger_path.FingerPathActivity">
+        </activity>
+        <activity android:name=".wave.WaveActivity">
+        </activity>
+        <activity android:name=".color_filter.ColorFilterActivity">
+        </activity>
+        <activity android:name=".linear_gradient.LinearGradientActivity">
+        </activity>
+        <activity android:name=".Water_ripple.WaterRippleActivity">
+        </activity>
+        <activity android:name=".animation.AnimationActivity">
+        </activity>
+        <activity android:name=".dialog.TestDialogActivity">
+        </activity>
+        <activity android:name=".dialog2.CustomDialogActivity">
+        </activity>
+        <activity android:name=".dialog_haoyue.HaoyueDialogActivity">
+        </activity>
+        <activity android:name=".operatecheckres.OperateCheckresActivity">
+        </activity>
+    </application>
+
+</manifest>

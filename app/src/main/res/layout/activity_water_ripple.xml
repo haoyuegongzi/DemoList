@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#bbccdd"
+    tools:context="com.haoyue.demo_list.Water_ripple.WaterRippleActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/flWaterRipple"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="#ffffffff"/>
+
+            <FrameLayout
+                android:id="@+id/flGradientView"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@+id/flWaterRipple"
+                android:layout_marginTop="15dp"
+                android:background="#ffffffff"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

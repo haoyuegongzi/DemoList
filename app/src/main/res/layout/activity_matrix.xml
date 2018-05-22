@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    tools:context="com.haoyue.demo_list.matrix.MatrixActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlMatrix"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#ffffff"/>
+
+    <LinearLayout
+        android:id="@+id/llBt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btZero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"/>
+        <Button
+            android:id="@+id/btOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"/>
+        <Button
+            android:id="@+id/btTwo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"/>
+        <Button
+            android:id="@+id/btThree"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"/>
+        <Button
+            android:id="@+id/btFour"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"/>
+    </LinearLayout>
+
+</RelativeLayout>
